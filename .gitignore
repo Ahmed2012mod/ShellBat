@@ -416,3 +416,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/c.bat
+/dnd.bat
+/dnr.bat
+/cr.bat
+/shellbat_id.txt
+/dn.bat
+/shellbat_todo.txt

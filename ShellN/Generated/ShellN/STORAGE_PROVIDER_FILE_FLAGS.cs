@@ -1,0 +1,10 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum STORAGE_PROVIDER_FILE_FLAGS
+{
+    SPFF_NONE = 0,
+    SPFF_DOWNLOAD_BY_DEFAULT = 1,
+    SPFF_CREATED_ON_THIS_DEVICE = 2,
+}

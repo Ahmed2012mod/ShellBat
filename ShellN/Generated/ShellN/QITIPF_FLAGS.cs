@@ -1,0 +1,15 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum QITIPF_FLAGS
+{
+    QITIPF_DEFAULT = 0,
+    QITIPF_USENAME = 1,
+    QITIPF_LINKNOTARGET = 2,
+    QITIPF_LINKUSETARGET = 4,
+    QITIPF_USESLOWTIP = 8,
+    QITIPF_SINGLELINE = 16,
+    QIF_CACHED = 1,
+    QIF_DONTEXPANDFOLDER = 2,
+}

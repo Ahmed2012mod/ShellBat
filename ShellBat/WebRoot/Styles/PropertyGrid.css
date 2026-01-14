@@ -1,0 +1,104 @@
+﻿@import 'Variables.css';
+
+.fld-pg-grid {
+    font-family: var(--propertygrid-font-family);
+    font-size: var(--propertygrid-font-size);
+    accent-color: var(--action-background-color);
+    line-height: 1em;
+}
+
+.fld-pg-category {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+    .fld-pg-category[collapsed] .fld-pg-category-expander::after {
+        content: "\f078";
+        font: var(--fa-font-solid);
+    }
+
+    .fld-pg-category:not(collapsed) .fld-pg-category-expander::after {
+        content: "\f077";
+        font: var(--fa-font-solid);
+    }
+
+.fld-pg-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--main-border-radius);
+    cursor: pointer;
+    background-color: var(--property-grid-header-background-color);
+    padding: 2px 8px;
+    clip-path: xywh(0 0 100% 100% round var(--main-border-radius));
+    margin-top: 4px;
+}
+
+.fld-pg-category-name {
+}
+
+.fld-pg-category-expander {
+    padding: 5px 10px;
+}
+
+.fld-pg-category-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    height: auto;
+}
+
+.fld-pg-property {
+    padding: 6px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fld-pg-name {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.fld-pg-value {
+    white-space: normal;
+    text-align: end;
+}
+
+.fld-pg-property > .fld-pg-value-readonly {
+    height: 20px;
+    opacity: 0.7;
+}
+
+.fld-pg-value select {
+    border: 0;
+    background: transparent;
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+.fld-pg-value select,
+::picker(select) {
+    appearance: base-select;
+}
+
+    .fld-pg-value select::picker-icon {
+        color: #999999;
+        transition: 0.4s;
+    }
+
+    .fld-pg-value select:open::picker-icon {
+        rotate: 180deg;
+    }
+
+
+.fld-pg-value input {
+    border: 0;
+    background-color: var(--input-background-color);
+    color: var(--main-color);
+    transition: 0.4s;
+    text-align: end;
+    padding-right: 8px;
+}

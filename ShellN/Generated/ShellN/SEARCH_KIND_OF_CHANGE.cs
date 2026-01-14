@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/searchapi/ne-searchapi-search_kind_of_change
+public enum SEARCH_KIND_OF_CHANGE
+{
+    SEARCH_CHANGE_ADD = 0,
+    SEARCH_CHANGE_DELETE = 1,
+    SEARCH_CHANGE_MODIFY = 2,
+    SEARCH_CHANGE_MOVE_RENAME = 3,
+    SEARCH_CHANGE_SEMANTICS_DIRECTORY = 262144,
+    SEARCH_CHANGE_SEMANTICS_SHALLOW = 524288,
+    SEARCH_CHANGE_SEMANTICS_UPDATE_SECURITY = 4194304,
+}

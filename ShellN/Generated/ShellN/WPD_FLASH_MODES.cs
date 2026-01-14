@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/wpd_sdk/wpd-flash-modes
+public enum WPD_FLASH_MODES
+{
+    WPD_FLASH_MODE_UNDEFINED = 0,
+    WPD_FLASH_MODE_AUTO = 1,
+    WPD_FLASH_MODE_OFF = 2,
+    WPD_FLASH_MODE_FILL = 3,
+    WPD_FLASH_MODE_RED_EYE_AUTO = 4,
+    WPD_FLASH_MODE_RED_EYE_FILL = 5,
+    WPD_FLASH_MODE_EXTERNAL_SYNC = 6,
+}

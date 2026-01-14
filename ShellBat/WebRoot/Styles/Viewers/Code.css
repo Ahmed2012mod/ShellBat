@@ -1,0 +1,60 @@
+﻿@import '../Variables.css';
+
+.viewer-Code {
+    overflow: hidden;
+}
+
+.viewer-Code-container {
+    height: 100%;
+}
+
+.viewer-Code-pg {
+    color: var(--main-background-color);
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    accent-color: var(--action-background-color);
+}
+
+.viewer-Code-pg-grid {
+    display: flex;
+    gap: 20px;
+    background-color: var(--property-grid-background-color);
+    padding-left: 6px;
+}
+
+.viewer-Code-pg-property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.viewer-Code-pg-value select {
+    border: 0;
+    background: transparent;
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+.viewer-Code-pg-value select,
+::picker(select) {
+    appearance: base-select;
+    align-items: center;
+    background-color: var(--property-grid-background-color);
+    color: var(--main-background-color);
+}
+
+    .viewer-Code-pg-value select::picker-icon {
+        color: #999999;
+        transition: 0.4s;
+    }
+
+    .viewer-Code-pg-value select:open::picker-icon {
+        rotate: 180deg;
+    }
+
+#viewer-Code-pg-value-enum-Language option {
+    margin: -6px 0;
+}

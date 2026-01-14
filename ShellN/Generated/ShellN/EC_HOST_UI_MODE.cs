@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum EC_HOST_UI_MODE
+{
+    ECHUIM_DESKTOP = 0,
+    ECHUIM_IMMERSIVE = 1,
+    ECHUIM_SYSTEM_LAUNCHER = 2,
+}

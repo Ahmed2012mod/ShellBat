@@ -1,0 +1,19 @@
+﻿@import '../Variables.css';
+
+.viewer-General {
+    padding: 4px;
+    overflow: auto;
+    user-select: text;
+}
+
+.signatures-property {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.signatures-value .signature {
+    padding: 4px;
+}

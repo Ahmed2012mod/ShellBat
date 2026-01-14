@@ -1,0 +1,353 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="GetWindowsSDKPaths.targets" />
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<AssemblyName>$(MSBuildProjectName).$(Platform)</AssemblyName>
+		<AssemblyTitle>$(MSBuildProjectName)</AssemblyTitle>
+		<TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<PublishAot>true</PublishAot>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<IsAotCompatible>true</IsAotCompatible>
+		<Platforms>ARM64;x64;x86</Platforms>
+		<!-- https://github.com/microsoft/CsWinRT/blob/master/docs/aot-trimming.md -->
+		<CsWinRTAotOptimizerEnabled>Auto</CsWinRTAotOptimizerEnabled>
+
+		<!-- this is needed for AOT trimming to keep ProgId attributes -->
+		<!-- https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/ILLink/ILLink.LinkAttributes.Shared.xml -->
+		<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+
+		<Title>ShellBat</Title>
+		<Company>Simon Mourier</Company>
+		<Authors>Simon Mourier</Authors>
+		<Product>ShellBat</Product>
+		<PackageTags>File Explorer;File Manager;File Browser;File Viewer;Terminal;Terminal Emulator;Markdown Viewer;Image Viewer;Video Player;Audio Player;PDF Viewer</PackageTags>
+		<Copyright>Copyright (C) 2024-$([System.DateTime]::UtcNow.ToString("yyyy")) Simon Mourier. All rights reserved.</Copyright>
+		<Description>ShellBat</Description>
+		<ProductVersion>1.0.0.0</ProductVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<SourceRevisionId>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\NoiseAsset_256X256.png" />
+		<None Remove="Resources\vs.0.55.1.zip" />
+		<None Remove="WebRoot\Assets\cmd-16.png" />
+		<None Remove="WebRoot\Assets\cmd-32.png" />
+		<None Remove="WebRoot\Assets\PasswordProtected.png" />
+		<None Remove="WebRoot\Assets\powershell-16.png" />
+		<None Remove="WebRoot\Assets\powershell-32.png" />
+		<None Remove="WebRoot\Assets\Terminals\bash-16.png" />
+		<None Remove="WebRoot\Assets\Terminals\bash-32.png" />
+		<None Remove="WebRoot\Assets\vs-16.png" />
+		<None Remove="WebRoot\Assets\vs-32.png" />
+		<None Remove="WebRoot\Assets\vsw-16.png" />
+		<None Remove="WebRoot\Assets\vsw-32.png" />
+		<None Remove="WebRoot\Modules\Search.js" />
+		<None Remove="WebRoot\node_modules\%40jsnix\addon-unicode-graphemes\lib\addon-unicode-graphemes.js" />
+		<None Remove="WebRoot\node_modules\%40xterm\addon-fit\lib\addon-fit.js" />
+		<None Remove="WebRoot\node_modules\%40xterm\xterm\css\xterm.css" />
+		<None Remove="WebRoot\node_modules\%40xterm\xterm\lib\xterm.js" />
+		<None Remove="WebRoot\node_modules\toastify-js\src\toastify.css" />
+		<None Remove="WebRoot\node_modules\toastify-js\src\toastify.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute"></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.Versioning.SupportedOSPlatformAttribute">
+			<_Parameter1>Windows10.0.19041.0</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Reflection.AssemblyMetadata">
+			<_Parameter1>PublishSingleFile</_Parameter1>
+			<_Parameter2>$(PublishSingleFile)</_Parameter2>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;IDE0079;CA1822</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;IDE0079;CA1822</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\NoiseAsset_256X256.png" />
+		<EmbeddedResource Include="Resources\Themes\Acrylic Almond.css" />
+		<EmbeddedResource Include="Resources\Themes\Almond.css" />
+		<EmbeddedResource Include="Resources\Themes\VT323.css" />
+		<EmbeddedResource Include="Resources\Themes\Caterpillar.css" />
+		<EmbeddedResource Include="Resources\vs.0.55.1.zip" />
+		<EmbeddedResource Include="runtimes\win-arm64\native\WebView2Loader.dll" />
+		<EmbeddedResource Include="runtimes\win-x64\native\WebView2Loader.dll" />
+		<EmbeddedResource Include="runtimes\win-x86\native\WebView2Loader.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<WebRootResource Include="WebRoot\Assets\PasswordProtected.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\bash-16.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\bash-32.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\cmd-16.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\cmd-32.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\powershell-16.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\powershell-32.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\pwsh-16.png" />
+		<WebRootResource Include="WebRoot\Assets\Terminals\pwsh-32.png" />
+		<WebRootResource Include="WebRoot\Assets\vs-16.png" />
+		<WebRootResource Include="WebRoot\Assets\vs-32.png" />
+		<WebRootResource Include="WebRoot\Assets\vsw-16.png" />
+		<WebRootResource Include="WebRoot\Assets\vsw-32.png" />
+		<WebRootResource Include="WebRoot\favicon.ico" />
+		<WebRootResource Include="WebRoot\Index.html" />
+		<WebRootResource Include="WebRoot\Modules\Scrollbar.js" />
+		<WebRootResource Include="WebRoot\Modules\GlobalEvents.js" />
+		<WebRootResource Include="WebRoot\Modules\Search.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Code.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Executable.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Preview.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Markdown.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Audio.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Video.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Image.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Pdf.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Text.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Binary.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\Details.js" />
+		<WebRootResource Include="WebRoot\Modules\Viewers\General.js" />
+		<WebRootResource Include="WebRoot\Modules\Terminus.js" />
+		<WebRootResource Include="WebRoot\Modules\Window.js" />
+		<WebRootResource Include="WebRoot\Modules\Enums.js" />
+		<WebRootResource Include="WebRoot\Modules\Menu.js" />
+		<WebRootResource Include="WebRoot\Modules\PropertyGrid.js" />
+		<WebRootResource Include="WebRoot\Modules\Tools.js" />
+		<WebRootResource Include="WebRoot\node_modules\@jsnix\addon-unicode-graphemes\lib\addon-unicode-graphemes.js" />
+		<WebRootResource Include="WebRoot\node_modules\@xterm\addon-fit\lib\addon-fit.js" />
+		<WebRootResource Include="WebRoot\node_modules\@xterm\xterm\css\xterm.css" />
+		<WebRootResource Include="WebRoot\node_modules\@xterm\xterm\lib\xterm.js" />
+		<WebRootResource Include="WebRoot\node_modules\toastify-js\src\toastify.css" />
+		<WebRootResource Include="WebRoot\node_modules\toastify-js\src\toastify.js" />
+		<WebRootResource Include="WebRoot\Styles\Scrollbar.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Code.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Executable.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Preview.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Markdown.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Audio.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Video.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Image.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Pdf.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Text.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\General.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Details.css" />
+		<WebRootResource Include="WebRoot\Styles\Viewers\Binary.css" />
+		<WebRootResource Include="WebRoot\Styles\Window.css" />
+		<WebRootResource Include="WebRoot\Styles\fa-all.min.css" />
+		<WebRootResource Include="WebRoot\Styles\Menu.css" />
+		<WebRootResource Include="WebRoot\Styles\PropertyGrid.css" />
+		<WebRootResource Include="WebRoot\Styles\Variables.css" />
+		<WebRootResource Include="WebRoot\webfonts\fa-brands-400.woff2" />
+		<WebRootResource Include="WebRoot\webfonts\fa-regular-400.woff2" />
+		<WebRootResource Include="WebRoot\webfonts\fa-solid-900.woff2" />
+		<WebRootResource Include="WebRoot\node_modules\animate.css\animate.min.css" />
+		<WebRootResource Include="WebRoot\node_modules\sweetalert2\dist\sweetalert2.all.min.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AvailableItemName Include="WebRootResource" />
+		<AvailableItemName Include="Icon" />
+	</ItemGroup>
+
+	<Target Name="EmbedWebRootResources" BeforeTargets="BeforeBuild">
+		<ItemGroup>
+			<EmbeddedResource Include="@(WebRootResource)">
+				<LogicalName>%(Identity)</LogicalName>
+			</EmbeddedResource>
+		</ItemGroup>
+	</Target>
+
+	<ItemGroup>
+		<Reference Include="DirectN">
+			<HintPath>..\ShellN\External\DirectN.dll</HintPath>
+		</Reference>
+		<Reference Include="DirectN.Extensions">
+			<HintPath>..\ShellN\External\DirectN.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="WebView2">
+			<HintPath>External\WebView2.dll</HintPath>
+		</Reference>
+		<Reference Include="WicNetCore">
+			<HintPath>External\WicNetCore.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="DirectN" />
+		<Using Include="DirectN.Extensions" />
+		<Using Include="DirectN.Extensions.Com" />
+		<Using Include="DirectN.Extensions.Utilities" />
+		<Using Include="ShellBat.Model" />
+		<Using Include="ShellBat.Model.Viewers" />
+		<Using Include="ShellBat.Monaco" />
+		<Using Include="ShellBat.Resources" />
+		<Using Include="ShellBat.Terminals" />
+		<Using Include="ShellBat.Terminals.Interop" />
+		<Using Include="ShellBat.Utilities" />
+		<Using Include="ShellBat.Utilities.GitHub" />
+		<Using Include="ShellBat.Windows" />
+		<Using Include="ShellBat.Windows.Effects" />
+		<Using Include="Microsoft.Win32" />
+		<Using Include="Microsoft.Win32.SafeHandles" />
+		<Using Include="ShellN" />
+		<Using Include="ShellN.Extensions" />
+		<Using Include="ShellN.Extensions.Utilities" />
+		<Using Include="System" />
+		<Using Include="System.Buffers" />
+		<Using Include="System.Collections" />
+		<Using Include="System.Collections.Concurrent" />
+		<Using Include="System.Collections.Generic" />
+		<Using Include="System.Collections.ObjectModel" />
+		<Using Include="System.Collections.Specialized" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Diagnostics.CodeAnalysis" />
+		<Using Include="System.Globalization" />
+		<Using Include="System.IO" />
+		<Using Include="System.IO.Compression" />
+		<Using Include="System.Linq" />
+		<Using Include="System.Net" />
+		<Using Include="System.Net.Http" />
+		<Using Include="System.Net.Http.Headers" />
+		<Using Include="System.Net.Http.Json" />
+		<Using Include="System.Net.Sockets" />
+		<Using Include="System.Numerics" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Runtime.Versioning" />
+		<Using Include="System.Runtime.CompilerServices" />
+		<Using Include="System.Runtime.InteropServices" />
+		<Using Include="System.Text" />
+		<Using Include="System.Text.Json" />
+		<Using Include="System.Text.Json.Serialization" />
+		<Using Include="System.Text.Json.Serialization.Metadata" />
+		<Using Include="System.Text.RegularExpressions" />
+		<Using Include="System.Threading" />
+		<Using Include="System.Threading.Tasks" />
+		<Using Include="System.Web" />
+		<Using Include="WebView2" />
+		<Using Include="WebView2.Utilities" />
+		<Using Include="WicNet" />
+		<Using Include="Windows.Foundation" />
+		<Using Include="Windows.Graphics" />
+		<Using Include="Windows.Graphics.Capture" />
+		<Using Include="Windows.Graphics.DirectX" />
+		<Using Include="Windows.Graphics.DirectX.Direct3D11" />
+		<Using Include="Windows.Graphics.Effects" />
+		<Using Include="Windows.Graphics.Imaging" />
+		<Using Include="Windows.UI" />
+		<Using Include="Windows.UI.Composition" />
+		<Using Include="Windows.UI.Composition.Core" />
+		<Using Include="WinRT" />
+		<Using Include="WinRT.Interop" />
+
+		<Using Alias="IGraphicsEffectD2D1Interop" Include="Windows.Graphics.Effects.IGraphicsEffectD2D1Interop" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="External\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ShellN.Extensions\ShellN.Extensions.csproj" />
+		<ProjectReference Include="..\ShellN\ShellN.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\Res.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Res.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Resources\Res.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Res.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Markdig" Version="0.44.0" />
+		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.2" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0" />
+	</ItemGroup>
+
+	<Target Name="Win32Resources" BeforeTargets="BeforeBuild">
+		<GetWindowsSDKPaths Condition="'$(SdkIncludePath)' == ''">
+			<Output TaskParameter="SdkIncludePath" ItemName="WindowsSDKIncludePath" />
+			<Output TaskParameter="SdkBinPath" ItemName="WindowsSDKBinPath" />
+		</GetWindowsSDKPaths>
+		<MakeDir Directories="$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res" />
+
+		<PropertyGroup>
+			<RcFileFlags Condition="'$(Configuration)' == 'Debug'">0x1L</RcFileFlags>
+			<RcFileFlags Condition="'$(Configuration)' != 'Debug'">0x0L</RcFileFlags>
+		</PropertyGroup>
+
+		<!-- build a .rc, rebuild version resource (you cannot use Win32Resource, Icon, Manifest properties anymore) -->
+		<PropertyGroup>
+			<VersionRc>
+				#include &lt;winres.h&gt;
+				1 VERSIONINFO
+				FILEVERSION $([System.String]::new('$(FileVersion)').Replace('.',','))
+				PRODUCTVERSION $([System.String]::new('$(ProductVersion)').Replace('.',','))
+				FILEFLAGSMASK 0x3fL
+				FILEFLAGS $(RcFileFlags)
+				FILEOS 0x40004L
+				FILETYPE 0x2L
+				FILESUBTYPE 0x0L
+				BEGIN
+				BLOCK "StringFileInfo"
+				BEGIN
+				BLOCK "040904b0"
+				BEGIN
+				VALUE "CompanyName", "$(Company)"
+				VALUE "FileDescription", "$(Description)"
+				VALUE "FileVersion", "$(FileVersion)"
+				VALUE "InternalName", "$(AssemblyTitle).dll"
+				VALUE "LegalCopyright", "$(Copyright)"
+				VALUE "OriginalFilename", "$(AssemblyTitle).dll"
+				VALUE "ProductName", "$(Product)"
+				VALUE "ProductVersion", "$(ProductVersion)"
+				END
+				END
+				BLOCK "VarFileInfo"
+				BEGIN
+				VALUE "Translation", 0x409, 1200
+				END
+				END
+			</VersionRc>
+
+			<ManifestRc>
+				1 RT_MANIFEST "app.manifest"
+			</ManifestRc>
+		</PropertyGroup>
+
+		<WriteLinesToFile File="$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res\$(MSBuildProjectName).rc" Overwrite="true" Lines="$(VersionRc)" />
+		<WriteLinesToFile File="$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res\$(MSBuildProjectName).rc" Lines="$(ManifestRc)" />
+		<WriteLinesToFile File="$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res\$(MSBuildProjectName).rc" Condition="@(Icon) != ''" Lines="@(Icon->'%(Index) ICON &quot;%(Identity)&quot;')" />
+
+		<!-- compiles the .rc into a .res -->
+		<Exec Command="call &quot;@(WindowsSDKBinPath)\rc.exe&quot; /i &quot;@(WindowsSDKIncludePath)\shared&quot; /i &quot;@(WindowsSDKIncludePath)\um&quot; &quot;$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res\$(MSBuildProjectName).rc&quot;" />
+		<PropertyGroup>
+			<Win32Resource>$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Platform)\w32res\$(MSBuildProjectName).res</Win32Resource>
+		</PropertyGroup>
+
+	</Target>
+
+</Project>

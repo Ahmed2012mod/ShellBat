@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum TBPFLAG
+{
+    TBPF_NOPROGRESS = 0,
+    TBPF_INDETERMINATE = 1,
+    TBPF_NORMAL = 2,
+    TBPF_ERROR = 4,
+    TBPF_PAUSED = 8,
+}

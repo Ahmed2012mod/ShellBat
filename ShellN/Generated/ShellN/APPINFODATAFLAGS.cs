@@ -1,0 +1,25 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shappmgr/ne-shappmgr-appinfodataflags
+public enum APPINFODATAFLAGS
+{
+    AIM_DISPLAYNAME = 1,
+    AIM_VERSION = 2,
+    AIM_PUBLISHER = 4,
+    AIM_PRODUCTID = 8,
+    AIM_REGISTEREDOWNER = 16,
+    AIM_REGISTEREDCOMPANY = 32,
+    AIM_LANGUAGE = 64,
+    AIM_SUPPORTURL = 128,
+    AIM_SUPPORTTELEPHONE = 256,
+    AIM_HELPLINK = 512,
+    AIM_INSTALLLOCATION = 1024,
+    AIM_INSTALLSOURCE = 2048,
+    AIM_INSTALLDATE = 4096,
+    AIM_CONTACT = 16384,
+    AIM_COMMENTS = 32768,
+    AIM_IMAGE = 131072,
+    AIM_READMEURL = 262144,
+    AIM_UPDATEINFOURL = 524288,
+}

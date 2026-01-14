@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum FILE_OPERATION_FLAGS2
+{
+    FOF2_NONE = 0,
+    FOF2_MERGEFOLDERSONCOLLISION = 1,
+}

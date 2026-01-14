@@ -1,0 +1,265 @@
+﻿{
+  "Types": [
+    {
+      "TypeName": "IProfferService",
+      "Methods": [
+        {
+          "Name": "ProfferService",
+          "Parameters": [
+            {
+              "Name": "serviceProvider",
+              "Def": {
+                "TypeName": "DirectN.IServiceProvider",
+                "MarshalUsing": {
+                  "TypeName": "UniqueComInterfaceMarshaller<DirectN.IServiceProvider>"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IContextMenu",
+      "Methods": [
+        {
+          "Name": "GetCommandString",
+          "Parameters": [
+            {
+              "Name": "pszName",
+              "Def": {
+                "TypeName": "nint",
+                "IsNullDirection": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IPortableDeviceManager",
+      "Methods": [
+        {
+          "Name": "GetDevices",
+          "Parameters": [
+            {
+              "Name": "pPnPDeviceIDs",
+              "Def": {
+                "TypeName": "nint",
+                "IsNullDirection": true
+              }
+            }
+          ]
+        },
+        {
+          "Name": "GetPrivateDevices",
+          "Parameters": [
+            {
+              "Name": "pPnPDeviceIDs",
+              "Def": {
+                "TypeName": "nint",
+                "IsNullDirection": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IPortableDeviceKeyCollection",
+      "Methods": [
+        {
+          "Name": "GetCount",
+          "Parameters": [
+            {
+              "Name": "pcElems",
+              "Def": {
+                "TypeName": "uint",
+                "Direction": "Out"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "GetAt",
+          "Parameters": [
+            {
+              "Name": "pKey",
+              "Def": {
+                "TypeName": "PROPERTYKEY",
+                "Direction": "Out"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IPortableDevicePropVariantCollection",
+      "Methods": [
+        {
+          "Name": "GetCount",
+          "Parameters": [
+            {
+              "Name": "pcElems",
+              "Def": {
+                "TypeName": "uint",
+                "Direction": "Out"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "GetAt",
+          "Parameters": [
+            {
+              "Name": "pValue",
+              "Def": {
+                "TypeName": "PROPERTYKEY",
+                "Direction": "Out"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IPortableDeviceValuesCollection",
+      "Methods": [
+        {
+          "Name": "GetCount",
+          "Parameters": [
+            {
+              "Name": "pcElems",
+              "Def": {
+                "TypeName": "uint",
+                "Direction": "Out"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "GetAt",
+          "Parameters": [
+            {
+              "Name": "pValue",
+              "Def": {
+                "TypeName": "PROPVARIANT",
+                "Direction": "Out"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IPortableDeviceValues",
+      "Methods": [
+        {
+          "Name": "GetCount",
+          "Parameters": [
+            {
+              "Name": "pcelt",
+              "Def": {
+                "TypeName": "uint",
+                "Direction": "Out"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "IRowset",
+      "Methods": [
+        {
+          "Name": "GetNextRows",
+          "Parameters": [
+            {
+              "Name": "prghRows",
+              "Def": {
+                "TypeName": "nint",
+                "Direction": "Out",
+                "IsIn": false,
+                "IsOut": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TypeName": "Functions",
+      "Methods": [
+        {
+          "Name": "AssocQueryStringW",
+          "Parameters": [
+            {
+              "Name": "pszOut",
+              "Def": {
+                "Direction": "Ref"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "AssocQueryStringA",
+          "Parameters": [
+            {
+              "Name": "pszOut",
+              "Def": {
+                "Direction": "Ref"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "AssocQueryStringByKeyW",
+          "Parameters": [
+            {
+              "Name": "pszOut",
+              "Def": {
+                "Direction": "Ref"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "AssocQueryStringByKeyA",
+          "Parameters": [
+            {
+              "Name": "pszOut",
+              "Def": {
+                "Direction": "Ref"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "TrackPopupMenu",
+          "TypeName": "int",
+          "Parameters": [
+            {
+              "Name": "nReserved",
+              "Def": {
+                "TypeName": "int"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "SHChangeNotifyRegister",
+          "Parameters": [
+            {
+              "Name": "pshcne",
+              "Def": {
+                "TypeName": "nint",
+                "IsNullDirection": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

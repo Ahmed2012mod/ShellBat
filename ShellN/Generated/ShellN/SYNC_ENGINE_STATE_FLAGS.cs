@@ -1,0 +1,19 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shobjidl/ne-shobjidl-sync_engine_state_flags
+[Flags]
+public enum SYNC_ENGINE_STATE_FLAGS
+{
+    SESF_NONE = 0,
+    SESF_SERVICE_QUOTA_NEARING_LIMIT = 1,
+    SESF_SERVICE_QUOTA_EXCEEDED_LIMIT = 2,
+    SESF_AUTHENTICATION_ERROR = 4,
+    SESF_PAUSED_DUE_TO_METERED_NETWORK = 8,
+    SESF_PAUSED_DUE_TO_DISK_SPACE_FULL = 16,
+    SESF_PAUSED_DUE_TO_CLIENT_POLICY = 32,
+    SESF_PAUSED_DUE_TO_SERVICE_POLICY = 64,
+    SESF_SERVICE_UNAVAILABLE = 128,
+    SESF_PAUSED_DUE_TO_USER_REQUEST = 256,
+    SESF_ALL_FLAGS = 511,
+}

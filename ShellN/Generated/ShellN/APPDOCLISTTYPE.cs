@@ -1,0 +1,8 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum APPDOCLISTTYPE
+{
+    ADLT_RECENT = 0,
+    ADLT_FREQUENT = 1,
+}

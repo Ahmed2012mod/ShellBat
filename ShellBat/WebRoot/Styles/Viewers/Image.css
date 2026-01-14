@@ -1,0 +1,55 @@
+﻿@import '../Variables.css';
+
+.viewer-Image {
+    overflow: hidden;
+}
+
+.viewer-Image-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewer-Image-page {
+    width: 100%;
+}
+
+.viewer-Image-img-container {
+    margin: 2px;
+    overflow: auto;
+    height: 100%;
+}
+
+.viewer-Image-pg {
+    color: var(--main-background-color);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    accent-color: var(--action-background-color);
+}
+
+.viewer-Image-pg-grid {
+    display: flex;
+    gap: 20px;
+    background-color: var(--property-grid-background-color);
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.viewer-Image-pg-property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+    .viewer-Image-pg-property button {
+        background-color: var(--property-grid-background-color);
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: var(--main-border-radius);
+        font-family: var(--action-font-family);
+        font-size: var(--action-font-size);
+    }

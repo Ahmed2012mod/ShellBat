@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum WNET_OPEN_ENUM_USAGE : uint
+{
+    RESOURCEUSAGE_NONE = 0,
+    RESOURCEUSAGE_CONNECTABLE = 1,
+    RESOURCEUSAGE_CONTAINER = 2,
+    RESOURCEUSAGE_ATTACHED = 16,
+    RESOURCEUSAGE_ALL = 19,
+}

@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum CERT_QUERY_FORMAT_TYPE : uint
+{
+    CERT_QUERY_FORMAT_BINARY = 1,
+    CERT_QUERY_FORMAT_BASE64_ENCODED = 2,
+    CERT_QUERY_FORMAT_ASN_ASCII_HEX_ENCODED = 3,
+}

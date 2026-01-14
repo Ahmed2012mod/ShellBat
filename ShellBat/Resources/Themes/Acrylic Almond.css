@@ -1,0 +1,28 @@
+﻿@import url(https://db.onlinewebfonts.com/c/6fc0c85f22d35fe341961ec4d512e1d7?family=Aber+Mono);
+
+.fld-menu {
+    box-shadow: inset 0 0 1px 1px lch(from var(--main-color) l c h / 0.2);
+}
+
+.fl-toolbar button {
+    background-color: var(--input-background-color);
+}
+
+.fld-window {
+    background-color: var(--input-background-color);
+    color: var(--main-color);
+}
+
+.swal2-popup {
+    background: var(--action-background-color);
+}
+
+.fld-menu-item:not(.title):hover {
+    background-color: var(--input-background-color);
+    color: var(--main-color);
+}
+
+.fld-menu-items:hover {
+    background-color: var(--input-background-color);
+    color: var(--main-color);
+}

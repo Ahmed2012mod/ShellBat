@@ -1,0 +1,15 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum SHGSI_FLAGS : uint
+{
+    SHGSI_ICONLOCATION = 0,
+    SHGSI_ICON = 256,
+    SHGSI_SYSICONINDEX = 16384,
+    SHGSI_LINKOVERLAY = 32768,
+    SHGSI_SELECTED = 65536,
+    SHGSI_LARGEICON = 0,
+    SHGSI_SMALLICON = 1,
+    SHGSI_SHELLICONSIZE = 4,
+}

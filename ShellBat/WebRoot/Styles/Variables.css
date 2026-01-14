@@ -1,0 +1,52 @@
+﻿:root {
+    --main-color: #F0F0F0;
+    --main-background-color: #101010;
+    --main-font-family: 'Lucida Console';
+    --main-font-size: 14px;
+    --main-border-radius: 4px;
+    --main-padding: 8px;
+
+    --border-color: #FFFFFF;
+    --hidden-color: #707070;
+    --system-color: #A0A0A0;
+    --editor-font-color: "#8FFFA2";
+    --editor-background-color: "#000000";
+    --disabled-color: #404040;
+    --hover-color: #453001;
+    --selected-color: #665840;
+
+    --action-background-color: #B8860B;
+    --action-font-size: 16px;
+    --action-font-family: 'Segoe UI';
+    --input-background-color: #202020;
+    
+    --entries-line-height: 0.6em;
+    --entries-font-size: 1em;
+
+    --menu-item-vertical-padding: 4px;
+
+    --propertygrid-font-size: 14px;
+    --propertygrid-font-family: 'Segoe UI';
+    --property-grid-background-color: #FFBF4B;
+    --property-grid-header-background-color: #5D5D5D;
+
+    --toolbar-background-image: linear-gradient(to right, var(--main-background-color), var(--main-color));
+
+    --description-background-color: #F7E8B9;
+    --description-color: #36395A;
+    
+    --markdown-viewer-font-family: 'Segoe UI';
+    --markdown-viewer-background-color: #FFFFFF;
+    --markdown-viewer-color: #000000;
+    
+    --window-header-font-family: 'Segoe UI';
+
+    --button-border-radius: 2px;
+
+    --windows-zindex: 1000;
+    --toolbar-zindex: 10000;
+    --toast-zindex: 20000;
+    --menu-zindex: 30000;
+    --tooltip-zindex: 40000;
+    --swal-zindex: 50000;    
+}

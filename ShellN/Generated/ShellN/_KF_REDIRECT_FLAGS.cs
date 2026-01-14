@@ -1,0 +1,18 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shobjidl_core/ne-shobjidl_core-_kf_redirect_flags
+public enum _KF_REDIRECT_FLAGS
+{
+    KF_REDIRECT_USER_EXCLUSIVE = 1,
+    KF_REDIRECT_COPY_SOURCE_DACL = 2,
+    KF_REDIRECT_OWNER_USER = 4,
+    KF_REDIRECT_SET_OWNER_EXPLICIT = 8,
+    KF_REDIRECT_CHECK_ONLY = 16,
+    KF_REDIRECT_WITH_UI = 32,
+    KF_REDIRECT_UNPIN = 64,
+    KF_REDIRECT_PIN = 128,
+    KF_REDIRECT_COPY_CONTENTS = 512,
+    KF_REDIRECT_DEL_SOURCE_CONTENTS = 1024,
+    KF_REDIRECT_EXCLUDE_ALL_KNOWN_SUBFOLDERS = 2048,
+}

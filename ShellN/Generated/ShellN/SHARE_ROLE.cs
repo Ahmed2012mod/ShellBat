@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shobjidl_core/ne-shobjidl_core-share_role
+public enum SHARE_ROLE
+{
+    SHARE_ROLE_INVALID = -1,
+    SHARE_ROLE_READER = 0,
+    SHARE_ROLE_CONTRIBUTOR = 1,
+    SHARE_ROLE_CO_OWNER = 2,
+    SHARE_ROLE_OWNER = 3,
+    SHARE_ROLE_CUSTOM = 4,
+    SHARE_ROLE_MIXED = 5,
+}

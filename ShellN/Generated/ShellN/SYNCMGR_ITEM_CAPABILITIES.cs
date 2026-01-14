@@ -1,0 +1,17 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/syncmgr/ne-syncmgr-syncmgr_item_capabilities
+public enum SYNCMGR_ITEM_CAPABILITIES
+{
+    SYNCMGR_ICM_NONE = 0,
+    SYNCMGR_ICM_PROVIDES_ICON = 1,
+    SYNCMGR_ICM_EVENT_STORE = 2,
+    SYNCMGR_ICM_CONFLICT_STORE = 4,
+    SYNCMGR_ICM_CAN_DELETE = 16,
+    SYNCMGR_ICM_CAN_BROWSE_CONTENT = 65536,
+    SYNCMGR_ICM_QUERY_BEFORE_ENABLE = 1048576,
+    SYNCMGR_ICM_QUERY_BEFORE_DISABLE = 2097152,
+    SYNCMGR_ICM_QUERY_BEFORE_DELETE = 4194304,
+    SYNCMGR_ICM_VALID_MASK = 7405591,
+}

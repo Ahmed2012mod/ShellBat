@@ -1,0 +1,9 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.fl-toolbar button {
+    background-color: var(--input-background-color);
+}
+
+.viewer-Binary pre {
+    font-size: calc(var(--action-font-size) * 0.8);
+}

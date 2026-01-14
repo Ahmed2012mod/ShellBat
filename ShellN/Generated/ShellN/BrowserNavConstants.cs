@@ -1,0 +1,38 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum BrowserNavConstants
+{
+    navOpenInNewWindow = 1,
+    navNoHistory = 2,
+    navNoReadFromCache = 4,
+    navNoWriteToCache = 8,
+    navAllowAutosearch = 16,
+    navBrowserBar = 32,
+    navHyperlink = 64,
+    navEnforceRestricted = 128,
+    navNewWindowsManaged = 256,
+    navUntrustedForDownload = 512,
+    navTrustedForActiveX = 1024,
+    navOpenInNewTab = 2048,
+    navOpenInBackgroundTab = 4096,
+    navKeepWordWheelText = 8192,
+    navVirtualTab = 16384,
+    navBlockRedirectsXDomain = 32768,
+    navOpenNewForegroundTab = 65536,
+    navTravelLogScreenshot = 131072,
+    navDeferUnload = 262144,
+    navSpeculative = 524288,
+    navSuggestNewWindow = 1048576,
+    navSuggestNewTab = 2097152,
+    navReserved1 = 4194304,
+    navHomepageNavigate = 8388608,
+    navRefresh = 16777216,
+    navHostNavigation = 33554432,
+    navReserved2 = 67108864,
+    navReserved3 = 134217728,
+    navReserved4 = 268435456,
+    navReserved5 = 536870912,
+    navReserved6 = 1073741824,
+    navReserved7 = int.MinValue,
+}

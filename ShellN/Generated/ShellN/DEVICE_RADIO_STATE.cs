@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum DEVICE_RADIO_STATE
+{
+    DRS_RADIO_ON = 0,
+    DRS_SW_RADIO_OFF = 1,
+    DRS_HW_RADIO_OFF = 2,
+    DRS_SW_HW_RADIO_OFF = 3,
+    DRS_HW_RADIO_ON_UNCONTROLLABLE = 4,
+    DRS_RADIO_INVALID = 5,
+    DRS_HW_RADIO_OFF_UNCONTROLLABLE = 6,
+    DRS_RADIO_MAX = 6,
+}

@@ -1,0 +1,18 @@
+﻿@import '../Variables.css';
+
+.viewer-Executable {
+    padding: 8px;
+    padding-right: 0;
+    background-color: black;
+    color: greenyellow;
+    overflow: hidden;
+}
+
+.viewer-Executable-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: auto;
+    line-height: 1.2em;
+    user-select: text;
+}

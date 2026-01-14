@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/wpd_sdk/wpd-exposure-metering-modes
+public enum WPD_EXPOSURE_METERING_MODES
+{
+    WPD_EXPOSURE_METERING_MODE_UNDEFINED = 0,
+    WPD_EXPOSURE_METERING_MODE_AVERAGE = 1,
+    WPD_EXPOSURE_METERING_MODE_CENTER_WEIGHTED_AVERAGE = 2,
+    WPD_EXPOSURE_METERING_MODE_MULTI_SPOT = 3,
+    WPD_EXPOSURE_METERING_MODE_CENTER_SPOT = 4,
+}

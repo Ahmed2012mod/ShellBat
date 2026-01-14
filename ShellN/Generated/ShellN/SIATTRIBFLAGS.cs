@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum SIATTRIBFLAGS
+{
+    SIATTRIBFLAGS_AND = 1,
+    SIATTRIBFLAGS_OR = 2,
+    SIATTRIBFLAGS_APPCOMPAT = 3,
+    SIATTRIBFLAGS_MASK = 3,
+    SIATTRIBFLAGS_ALLITEMS = 16384,
+}

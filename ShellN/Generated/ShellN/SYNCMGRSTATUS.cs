@@ -1,0 +1,17 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/mobsync/ne-mobsync-syncmgrstatus
+public enum SYNCMGRSTATUS
+{
+    SYNCMGRSTATUS_STOPPED = 0,
+    SYNCMGRSTATUS_SKIPPED = 1,
+    SYNCMGRSTATUS_PENDING = 2,
+    SYNCMGRSTATUS_UPDATING = 3,
+    SYNCMGRSTATUS_SUCCEEDED = 4,
+    SYNCMGRSTATUS_FAILED = 5,
+    SYNCMGRSTATUS_PAUSED = 6,
+    SYNCMGRSTATUS_RESUMING = 7,
+    SYNCMGRSTATUS_UPDATING_INDETERMINATE = 8,
+    SYNCMGRSTATUS_DELETED = 256,
+}

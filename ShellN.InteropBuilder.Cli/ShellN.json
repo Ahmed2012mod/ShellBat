@@ -1,0 +1,92 @@
+﻿{
+  // customized generation for ShellN
+  "BuilderTypeFilePath": "ShellN.InteropBuilder.Cli.dll",
+  "BuilderTypeName": "ShellN.InteropBuilder.Cli.Builder, ShellN.InteropBuilder.Cli",
+  "OutputEncoding": "UTF-8",
+  "Generation": {
+    // unified namespace configuration
+    "Unified": {
+      "Namespace": "ShellN"
+    }
+  },
+  // per-generator configuration
+  "Generator": {
+    "CSharp": {
+      "GenerateTypeKeywords": true,
+
+      // types that are supported by ShellN project for constant generation (+ standard ones)
+      "SupportedConstantTypes": [
+        "DEVPROPKEY",
+        "PWSTR"
+      ]
+    }
+  },
+  // types that we want to include or exclude
+  "TypeInputs": [
+    "CMSG_SIGNER_INFO",
+    "COPYDATASTRUCT",
+    "CRYPT_TIMESTAMP_INFO",
+    "DIBSECTION",
+    "FILE_ACCESS_RIGHTS",
+    "FILE_CREATION_DISPOSITION",
+    "FILE_FLAGS_AND_ATTRIBUTES",
+    "IMAGE_LIST_DRAW_STYLE",
+    "IMAGE_SUBSYSTEM",
+    "SPC_SP_OPUS_INFO",
+    "IAccessor",
+    "IDataInitialize",
+    "IDBInitialize",
+    "IDBCreateCommand",
+    "IDBCreateSession",
+    "ICommandText",
+    "IGetRow",
+    "IRowset",
+    "ISearchManager",
+    "Windows.Win32.UI.Shell*",
+    "!Windows.Win32.Data*",
+    "!IPublishingWizard*",
+    "IZoneIdentifier2",
+    "URLZONE",
+    "CSearchManager",
+    "MSDAINITIALIZE",
+    "IInternetSecurityManagerEx2",
+    "Windows.Win32.UI.Controls.IImageList",
+    "Windows.Win32.Devices.PortableDevices"
+  ],
+  // members (method, fields) we want to include or exclude
+  "MemberInputs": [
+    "CreateCompatibleDC",
+    "CreateFileW",
+    "CreateMenu",
+    "CreatePopupMenu",
+    "CryptDecodeObjectEx",
+    "CryptMsgClose",
+    "CryptMsgGetParam",
+    "CryptMsgOpenToDecode",
+    "CryptMsgUpdate",
+    "CryptQueryObject",
+    "DestroyMenu",
+    "FileTimeToLocalFileTime",
+    "FileTimeToSystemTime",
+    "GetDIBits",
+    "GetDriveTypeW",
+    "GetFinalPathNameByHandleW",
+    "GetMenuItemCount",
+    "GetMenuItemID",
+    "GetMenuItemInfoW",
+    "GetStorageDependencyInformation",
+    "IsNetDrive",
+    "PathCchCombineEx",
+    "PathIsNetworkPathW",
+    "PathGetDriveNumberW",
+    "RESOURCEDISPLAYTYPE_*",
+    "DBT_*",
+    "SH*",
+    "!Shutdown*",
+    "TrackPopupMenu",
+    "MUTZ_*",
+    "WNetGetNetworkInformationW",
+    "WNetOpenEnumW",
+    "WNetEnumResourceW"
+  ]
+}

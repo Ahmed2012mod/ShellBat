@@ -1,0 +1,10 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum SYNCMGR_UPDATE_REASON
+{
+    SYNCMGR_UR_ADDED = 0,
+    SYNCMGR_UR_CHANGED = 1,
+    SYNCMGR_UR_REMOVED = 2,
+    SYNCMGR_UR_MAX = 2,
+}

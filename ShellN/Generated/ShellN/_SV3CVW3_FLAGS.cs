@@ -1,0 +1,10 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum _SV3CVW3_FLAGS
+{
+    SV3CVW3_DEFAULT = 0,
+    SV3CVW3_NONINTERACTIVE = 1,
+    SV3CVW3_FORCEVIEWMODE = 2,
+    SV3CVW3_FORCEFOLDERFLAGS = 4,
+}

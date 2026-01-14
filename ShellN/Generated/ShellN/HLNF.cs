@@ -1,0 +1,13 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum HLNF : uint
+{
+    HLNF_INTERNALJUMP = 1,
+    HLNF_OPENINNEWWINDOW = 2,
+    HLNF_NAVIGATINGBACK = 4,
+    HLNF_NAVIGATINGFORWARD = 8,
+    HLNF_NAVIGATINGTOSTACKITEM = 16,
+    HLNF_CREATENOHISTORY = 32,
+}

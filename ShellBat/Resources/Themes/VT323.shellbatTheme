@@ -1,0 +1,26 @@
+{
+  "main-color": "#b0ff95",
+  "main-font-family": "\"VT323\", monospace",
+  "main-font-size": "26px",
+  "main-background-color": "#101010",
+  "main-border-radius": "0",
+
+  "input-background-color": "#49bb1a",
+  "system-color": "#187e2e",
+  "hidden-color": "#6f9668",
+  "hover-color": "var(--input-background-color",
+
+  "action-font-family": "\"VT323\", monospace",
+  "action-font-size": "26px",
+
+  "entries-line-height": "0.8em",
+
+  "menu-item-vertical-padding": "0px",
+
+  "property-grid-font-family": "\"VT323\", monospace",
+  "property-grid-background-color": "var(--input-background-color)",
+
+  "toolbar-background-image": "linear-gradient(to right, black, black)",
+
+  "button-border-radius": "0"
+}

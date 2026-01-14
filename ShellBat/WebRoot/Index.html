@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ShellBat</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" sizes="16x16 32x32 48x48 256x256" href="favicon.ico">
+
+    <script type="text/javascript" src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="node_modules/@jsnix/addon-unicode-graphemes/lib/addon-unicode-graphemes.js"></script>
+    <script type="text/javascript" src="node_modules/@xterm/xterm/lib/xterm.js"></script>
+    <script type="text/javascript" src="node_modules/@xterm/addon-fit/lib/addon-fit.js"></script>
+    <script type="text/javascript" src="node_modules/toastify-js/src/toastify.js"></script>
+
+    <link async rel="stylesheet" data-name="Monaco/vs/editor/editor.main" href="Monaco/vs/editor/editor.main.css" />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="node_modules/toastify-js/src/toastify.css" />
+    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="Styles/fa-all.min.css" />
+    <link rel="stylesheet" href="Styles/PropertyGrid.css" />
+    <link rel="stylesheet" href="Styles/Menu.css" />
+    <link rel="stylesheet" href="Styles/Window.css" />
+    <link rel="stylesheet" href="Styles/Scrollbar.css" />
+    <link rel="stylesheet" href="Styles/ShellBat.css" />
+
+    <script type="module" src="Modules/ShellBat.js"></script>
+    <script src="Monaco/vs/loader.js"></script>
+    <script>require.config({ paths: { 'vs': 'Monaco/vs' } });</script>
+    <script async src="Monaco/vs/editor/editor.main.js"></script>
+</head>
+<body>
+
+    <div class="fl-toolbar" id="app-toolbar">
+        <button id="app-go-back" tooltip="GoBack"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="app-go-forward" tooltip="GoForward"><i class="fa-solid fa-chevron-right"></i></button>
+        <button id="app-go-up" tooltip="GoUp"><i class="fa-solid fa-chevron-up"></i></button>
+        <button id="app-open-with-explorer" tooltip="OpenWithExplorer"><i class="fa-brands fa-windows"></i></button>
+        <button id="app-recycle-bin" tooltip="RecycleBin"><i class="fa-solid fa-trash-can"></i></button>
+        <button id="app-add-to-favorites" tooltip="AddToFavorites"><i class="fa-solid fa-heart"></i></button>
+        <button id="app-remove-from-favorites" tooltip="RemoveFromFavorites"><i class="fa-solid fa-heart-circle-xmark"></i></button>
+        <button id="app-favorites" disabled class="fld-dropdown" tooltip="Favorites"><i class="fa-solid fa-list-check"></i></button>
+        <button id="app-history" disabled class="fld-dropdown" tooltip="History"><i class="fa-solid fa-clock-rotate-left"></i></button>
+        <div id="app-breadcrumbs">
+        </div>
+        <div id="app-address">
+            <input id="app-address-value" type="text" />
+        </div>
+        <div id="app-caption" class="app-caption">&nbsp;</div>
+        <div id="app-administrator" hidden></div>
+        <div id="app-zoom"></div>
+        <button id="app-info-button"><i class="fa-solid fa-circle-info"></i></button>
+        <button id="app-min-button" tooltip="Minimize"><i class="fa-regular fa-window-minimize"></i></button>
+        <button id="app-max-button" tooltip="Maximize_Restore"><i class="fa-regular fa-window-restore"></i></button>
+        <button id="app-close-button" tooltip="Close"><i class="fa-regular fa-window-close"></i></button>
+    </div>
+
+    <div id="app-entries-parent">
+    </div>
+
+    <div class="fl-toolbar" id="app-statusbar">
+        <div class="app-caption">
+            <div id="app-icon"><img src="favicon.ico" /></div>
+            <div id="app-title" class="animate__animated animate__fadeInRight"><div id="app-instances">ShellBat</div></div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div id="app-items"></div>
+        </div>
+        <div id="app-filter">
+            <div id="app-filter-type"></div>
+            <input id="app-filter-value" spellcheck="false" type="text" />
+            <button id="app-filter-close" tooltip="Close"><i class="fa-regular fa-circle-xmark"></i></button>
+        </div>
+        <button id="app-thumbnails-size" class="animate__animated" tooltip="ThumbnailsSize"><i class="fa-solid fa-expand"></i></button>
+        <button id="app-sort" tooltip="SortBy"><i class="fa-solid fa-sort"></i></button>
+        <button id="app-view" tooltip="View"><i class="fa-solid fa-table-list"></i></button>
+        <button id="app-actions" tooltip="RunAction"><i class="fa-solid fa-play-circle"></i></button>
+    </div>
+
+    <div id="app-tooltip"></div>
+
+</body>
+</html>

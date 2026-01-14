@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum PROPERTYUI_FORMAT_FLAGS
+{
+    PUIFFDF_DEFAULT = 0,
+    PUIFFDF_RIGHTTOLEFT = 1,
+    PUIFFDF_SHORTFORMAT = 2,
+    PUIFFDF_NOTIME = 4,
+    PUIFFDF_FRIENDLYDATE = 8,
+}

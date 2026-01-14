@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum NSTCGNI
+{
+    NSTCGNI_NEXT = 0,
+    NSTCGNI_NEXTVISIBLE = 1,
+    NSTCGNI_PREV = 2,
+    NSTCGNI_PREVVISIBLE = 3,
+    NSTCGNI_PARENT = 4,
+    NSTCGNI_CHILD = 5,
+    NSTCGNI_FIRSTVISIBLE = 6,
+    NSTCGNI_LASTVISIBLE = 7,
+}

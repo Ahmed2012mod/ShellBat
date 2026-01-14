@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum ACTIVATEOPTIONS
+{
+    AO_NONE = 0,
+    AO_DESIGNMODE = 1,
+    AO_NOERRORUI = 2,
+    AO_NOSPLASHSCREEN = 4,
+    AO_PRELAUNCH = 33554432,
+}

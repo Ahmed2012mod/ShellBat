@@ -1,0 +1,10 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/wpd_sdk/wpd-sms-encoding-types
+public enum WPD_SMS_ENCODING_TYPES
+{
+    SMS_ENCODING_7_BIT = 0,
+    SMS_ENCODING_8_BIT = 1,
+    SMS_ENCODING_UTF_16 = 2,
+}

@@ -1,0 +1,10 @@
+﻿namespace ShellBat.Terminals.Interop;
+
+public static class Constants
+{
+    public const uint PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE = 0x00020016;
+    public const uint EXTENDED_STARTUPINFO_PRESENT = 0x00080000;
+    public const uint CREATE_DEFAULT_ERROR_MODE = 0x04000000;
+    public const uint CREATE_NO_WINDOW = 0x08000000;
+
+}

@@ -1,0 +1,20 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf
+public enum _SHCONTF
+{
+    SHCONTF_CHECKING_FOR_CHILDREN = 16,
+    SHCONTF_FOLDERS = 32,
+    SHCONTF_NONFOLDERS = 64,
+    SHCONTF_INCLUDEHIDDEN = 128,
+    SHCONTF_INIT_ON_FIRST_NEXT = 256,
+    SHCONTF_NETPRINTERSRCH = 512,
+    SHCONTF_SHAREABLE = 1024,
+    SHCONTF_STORAGE = 2048,
+    SHCONTF_NAVIGATION_ENUM = 4096,
+    SHCONTF_FASTITEMS = 8192,
+    SHCONTF_FLATLIST = 16384,
+    SHCONTF_ENABLE_ASYNC = 32768,
+    SHCONTF_INCLUDESUPERHIDDEN = 65536,
+}

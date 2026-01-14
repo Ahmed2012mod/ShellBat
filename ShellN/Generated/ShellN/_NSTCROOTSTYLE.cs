@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum _NSTCROOTSTYLE
+{
+    NSTCRS_VISIBLE = 0,
+    NSTCRS_HIDDEN = 1,
+    NSTCRS_EXPANDED = 2,
+}

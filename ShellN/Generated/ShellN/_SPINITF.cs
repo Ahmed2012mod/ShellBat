@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum _SPINITF
+{
+    SPINITF_NORMAL = 0,
+    SPINITF_MODAL = 1,
+    SPINITF_NOMINIMIZE = 8,
+}

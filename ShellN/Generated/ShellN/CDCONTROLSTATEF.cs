@@ -1,0 +1,11 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum CDCONTROLSTATEF
+{
+    CDCS_INACTIVE = 0,
+    CDCS_ENABLED = 1,
+    CDCS_VISIBLE = 2,
+    CDCS_ENABLEDVISIBLE = 3,
+}

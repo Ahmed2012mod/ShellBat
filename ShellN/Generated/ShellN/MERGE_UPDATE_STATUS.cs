@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum MERGE_UPDATE_STATUS
+{
+    MUS_COMPLETE = 0,
+    MUS_USERINPUTNEEDED = 1,
+    MUS_FAILED = 2,
+}

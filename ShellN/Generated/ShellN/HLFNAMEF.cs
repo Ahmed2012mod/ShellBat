@@ -1,0 +1,12 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum HLFNAMEF
+{
+    HLFNAMEF_DEFAULT = 0,
+    HLFNAMEF_TRYCACHE = 1,
+    HLFNAMEF_TRYPRETTYTARGET = 2,
+    HLFNAMEF_TRYFULLTARGET = 4,
+    HLFNAMEF_TRYWIN95SHORTCUT = 8,
+}

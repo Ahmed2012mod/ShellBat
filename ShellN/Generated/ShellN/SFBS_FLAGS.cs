@@ -1,0 +1,8 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum SFBS_FLAGS
+{
+    SFBS_FLAGS_ROUND_TO_NEAREST_DISPLAYED_DIGIT = 1,
+    SFBS_FLAGS_TRUNCATE_UNDISPLAYED_DECIMAL_DIGITS = 2,
+}

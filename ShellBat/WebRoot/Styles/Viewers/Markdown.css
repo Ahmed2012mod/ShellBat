@@ -1,0 +1,22 @@
+﻿@import '../Variables.css';
+
+.viewer-Markdown {
+    padding: 8px;
+    overflow: hidden;
+    background-color: var(--markdown-viewer-background-color);
+    color: var(--markdown-viewer-color);
+}
+
+.viewer-Markdown-container {
+    height: 100%;
+    overflow: auto;
+    font-family: var(--markdown-viewer-font-family);
+    user-select: text;
+}
+
+.viewer-Markdown-menu-item.checked::before {
+    content: "\f00c";
+    font: var(--fa-font-solid);
+    color: hwb(from var(--action-background-color) h w b / 0.8);
+    padding-right: 6px;
+}

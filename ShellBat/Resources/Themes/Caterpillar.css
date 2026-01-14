@@ -1,0 +1,5 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+.fl-toolbar button {
+    background-color: var(--input-background-color);
+}

@@ -1,0 +1,11 @@
+﻿@import '../Variables.css';
+
+.viewer-Preview {
+    padding: 6px;
+    color: var(--main-background-color);
+    overflow: hidden;
+}
+
+.viewer-Preview-container {
+    height: 100%;
+}

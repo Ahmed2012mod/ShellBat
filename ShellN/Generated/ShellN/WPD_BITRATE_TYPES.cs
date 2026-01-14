@@ -1,0 +1,11 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/wpd_sdk/wpd-bitrate-types
+public enum WPD_BITRATE_TYPES
+{
+    WPD_BITRATE_TYPE_UNUSED = 0,
+    WPD_BITRATE_TYPE_DISCRETE = 1,
+    WPD_BITRATE_TYPE_VARIABLE = 2,
+    WPD_BITRATE_TYPE_FREE = 3,
+}

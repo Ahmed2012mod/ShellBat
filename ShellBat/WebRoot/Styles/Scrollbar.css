@@ -1,0 +1,48 @@
+﻿@import 'Variables.css';
+
+.fld-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fld-sb-v {
+    flex-direction: column;
+    width: 12px;
+}
+
+.fld-sb-thumb {
+    flex-grow: 1;
+}
+
+.fld-sb-thumb-v {
+    margin-left: 1px;
+}
+
+.fld-sb-viewport {
+    position: relative;
+    border-radius: var(--main-border-radius);
+    background-color: hwb(from var(--input-background-color) h w b / 0.7);
+}
+
+.fld-sb-viewport-v {
+    margin-left: 1px;
+}
+
+.fld-sb-button-near-v::after {
+    content: "\f0d8";
+    font: var(--fa-font-solid);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: hwb(from var(--input-background-color) h w b / 0.7);
+}
+
+.fld-sb-button-far-v::after {
+    content: "\f0d7";
+    font: var(--fa-font-solid);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2px;
+    color: hwb(from var(--input-background-color) h w b / 0.7);
+}

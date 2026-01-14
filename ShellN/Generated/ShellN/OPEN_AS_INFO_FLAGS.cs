@@ -1,0 +1,14 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum OPEN_AS_INFO_FLAGS
+{
+    OAIF_ALLOW_REGISTRATION = 1,
+    OAIF_REGISTER_EXT = 2,
+    OAIF_EXEC = 4,
+    OAIF_FORCE_REGISTRATION = 8,
+    OAIF_HIDE_REGISTRATION = 32,
+    OAIF_URL_PROTOCOL = 64,
+    OAIF_FILE_IS_URI = 128,
+}

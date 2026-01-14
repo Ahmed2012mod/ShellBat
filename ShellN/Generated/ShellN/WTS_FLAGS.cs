@@ -1,0 +1,25 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/thumbcache/ne-thumbcache-wts_flags
+[Flags]
+public enum WTS_FLAGS
+{
+    WTS_NONE = 0,
+    WTS_EXTRACT = 0,
+    WTS_INCACHEONLY = 1,
+    WTS_FASTEXTRACT = 2,
+    WTS_FORCEEXTRACTION = 4,
+    WTS_SLOWRECLAIM = 8,
+    WTS_EXTRACTDONOTCACHE = 32,
+    WTS_SCALETOREQUESTEDSIZE = 64,
+    WTS_SKIPFASTEXTRACT = 128,
+    WTS_EXTRACTINPROC = 256,
+    WTS_CROPTOSQUARE = 512,
+    WTS_INSTANCESURROGATE = 1024,
+    WTS_REQUIRESURROGATE = 2048,
+    WTS_APPSTYLE = 8192,
+    WTS_WIDETHUMBNAILS = 16384,
+    WTS_IDEALCACHESIZEONLY = 32768,
+    WTS_SCALEUP = 65536,
+}

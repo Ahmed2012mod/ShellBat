@@ -1,0 +1,20 @@
+{
+  "main-color": "#F5E8D6",
+  "main-font-family": "\"M PLUS 1 Code\", monospace",
+  "main-font-size": "15px",
+  "main-background-color": "#20232A",
+  "main-border-radius": "0",
+
+  "input-background-color": "#f36933",
+  "action-background-color": "#2f2a27",
+  "hover-color": "var(--input-background-color",
+
+  "entries-line-height": "0.8em",
+
+  "property-grid-font-family": "\u0027Segoe UI\u0027, Tahoma, Geneva, Verdana, sans-serif",
+  "property-grid-background-color": "var(--input-background-color)",
+
+  "toolbar-background-image": "linear-gradient(to right, var(--main-background-color), var(--main-color))",
+
+  "button-border-radius": "0"
+}

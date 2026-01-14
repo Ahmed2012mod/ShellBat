@@ -1,0 +1,15 @@
+﻿#nullable enable
+namespace ShellN;
+
+// https://learn.microsoft.com/windows/win32/api/shobjidl_core/ne-shobjidl_core-folderlogicalviewmode
+public enum FOLDERLOGICALVIEWMODE
+{
+    FLVM_UNSPECIFIED = -1,
+    FLVM_FIRST = 1,
+    FLVM_DETAILS = 1,
+    FLVM_TILES = 2,
+    FLVM_ICONS = 3,
+    FLVM_LIST = 4,
+    FLVM_CONTENT = 5,
+    FLVM_LAST = 5,
+}

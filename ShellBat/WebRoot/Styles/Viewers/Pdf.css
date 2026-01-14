@@ -1,0 +1,52 @@
+﻿@import '../Variables.css';
+
+.viewer-Pdf {
+    padding: 4px;
+    overflow: auto;
+}
+
+.viewer-Pdf-container {
+    overflow: clip;
+}
+
+.viewer-Pdf-page {
+    width: 100%;
+}
+
+.viewer-Pdf-pg {
+    color: var(--main-background-color);
+    margin-bottom: 4px;
+    accent-color: var(--action-background-color);
+}
+
+.viewer-Pdf-pg-grid {
+    display: flex;
+    gap: 20px;
+    background-color: var(--property-grid-background-color);
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.viewer-Pdf-protected {
+    color: red;
+    margin: 10px;
+    justify-self: center;
+    font-size: 1.3em;
+}
+
+.viewer-Pdf-pg-property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+    .viewer-Pdf-pg-property button {
+        background-color: var(--property-grid-background-color);
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: var(--main-border-radius);
+        font-family: var(--action-font-family);
+        font-size: var(--action-font-size);
+    }

@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Add to favorites</value>
+  </data>
+  <data name="Ascending" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DateModified" xml:space="preserve">
+    <value>Date modified</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DisplayTitle" xml:space="preserve">
+    <value>Display title</value>
+  </data>
+  <data name="ExcludeFiles" xml:space="preserve">
+    <value>Exclude files</value>
+  </data>
+  <data name="ExcludeFolders" xml:space="preserve">
+    <value>Exclude folders</value>
+  </data>
+  <data name="ExpandOthers" xml:space="preserve">
+    <value>Expand (${others})</value>
+  </data>
+  <data name="Extension" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="GoBackTo" xml:space="preserve">
+    <value>Go back to '${backFullDisplayName}'</value>
+  </data>
+  <data name="GoForwardTo" xml:space="preserve">
+    <value>Go forward to '${forwardFullDisplayName}'</value>
+  </data>
+  <data name="GoUpTo" xml:space="preserve">
+    <value>Go up to '${upFullDisplayName}'</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="ImagesOptions" xml:space="preserve">
+    <value>Images options</value>
+  </data>
+  <data name="IncludeHidden" xml:space="preserve">
+    <value>Include hidden files</value>
+  </data>
+  <data name="IncludeSystem" xml:space="preserve">
+    <value>Include system files</value>
+  </data>
+  <data name="InstanceSettings" xml:space="preserve">
+    <value>Instance settings</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="DetailsOptions" xml:space="preserve">
+    <value>Details options</value>
+  </data>
+  <data name="Maximize_Restore" xml:space="preserve">
+    <value>Maximize or Restore</value>
+  </data>
+  <data name="Minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NoneDetected" xml:space="preserve">
+    <value>(none detected)</value>
+  </data>
+  <data name="OpenConfig" xml:space="preserve">
+    <value>Open configuration folder</value>
+  </data>
+  <data name="OpenWithExplorer" xml:space="preserve">
+    <value>Open with Explorer</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Remove from favorites</value>
+  </data>
+  <data name="SelectionOptions" xml:space="preserve">
+    <value>Selection options</value>
+  </data>
+  <data name="SendErrorReport" xml:space="preserve">
+    <value>Send anonymous error report to the developer?</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ShowIcons" xml:space="preserve">
+    <value>Show icons</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Sort by</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>Source Code</value>
+  </data>
+  <data name="SysInfo" xml:space="preserve">
+    <value>System info</value>
+  </data>
+  <data name="_Dir_" xml:space="preserve">
+    <value>&lt;DIR&gt;</value>
+  </data>
+  <data name="ShowThumbnails" xml:space="preserve">
+    <value>Show thumbnails</value>
+  </data>
+  <data name="ThumbnailsSize" xml:space="preserve">
+    <value>Thumbnails size</value>
+  </data>
+  <data name="ShowCompressedAsFile" xml:space="preserve">
+    <value>Show compressed as file</value>
+  </data>
+  <data name="ShowImagesOnly" xml:space="preserve">
+    <value>Show image files only</value>
+  </data>
+  <data name="RunAction" xml:space="preserve">
+    <value>Run action</value>
+  </data>
+  <data name="ExportAsCsv" xml:space="preserve">
+    <value>Export as CSV...</value>
+  </data>
+  <data name="NewTerminal" xml:space="preserve">
+    <value>New terminal</value>
+  </data>
+  <data name="WindowsPowershell" xml:space="preserve">
+    <value>Windows Powershell</value>
+  </data>
+  <data name="CommandPrompt" xml:space="preserve">
+    <value>Command prompt</value>
+  </data>
+  <data name="ClearCaches" xml:space="preserve">
+    <value>Clear caches</value>
+  </data>
+  <data name="NewFolder" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PreviewHandler" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ImageMetadata" xml:space="preserve">
+    <value>Image Metadata</value>
+  </data>
+  <data name="Diagnostics" xml:space="preserve">
+    <value>Diagnostics</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="Browsing" xml:space="preserve">
+    <value>Browsing</value>
+  </data>
+  <data name="Lowercase" xml:space="preserve">
+    <value>Lowercase</value>
+  </data>
+  <data name="BytesPerRow" xml:space="preserve">
+    <value>Bytes per row</value>
+  </data>
+  <data name="HighlightCrLf" xml:space="preserve">
+    <value>Highlight CR/LF</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="LinkProperties" xml:space="preserve">
+    <value>Link properties</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Next page</value>
+  </data>
+  <data name="PrevPage" xml:space="preserve">
+    <value>Previous page</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="PasswordProtected" xml:space="preserve">
+    <value>Document is password protected</value>
+  </data>
+  <data name="OpenFromExplorer" xml:space="preserve">
+    <value>Open from Explorer...</value>
+  </data>
+  <data name="DigitalSignatures" xml:space="preserve">
+    <value>Digital Signatures</value>
+  </data>
+  <data name="Signer" xml:space="preserve">
+    <value>Signer</value>
+  </data>
+  <data name="Algorithm" xml:space="preserve">
+    <value>Algorithm</value>
+  </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
+  <data name="Issuer" xml:space="preserve">
+    <value>Issuer</value>
+  </data>
+  <data name="ProgramName" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>Publisher</value>
+  </data>
+  <data name="ExportExtensionsAsCsv" xml:space="preserve">
+    <value>Export extensions definitions as CSV</value>
+  </data>
+  <data name="OpenFromVisualStudio" xml:space="preserve">
+    <value>Open from Visual Studio...</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Powershell" xml:space="preserve">
+    <value>Powershell</value>
+  </data>
+  <data name="Bash" xml:space="preserve">
+    <value>Windows bash</value>
+  </data>
+  <data name="SyncShellBat" xml:space="preserve">
+    <value>Sync ShellBat</value>
+  </data>
+  <data name="SyncShellBatTooltip" xml:space="preserve">
+    <value>Synchronize ShellBat window from Terminal window</value>
+  </data>
+  <data name="SyncTerminal" xml:space="preserve">
+    <value>Sync Terminal</value>
+  </data>
+  <data name="SyncTerminalTooltip" xml:space="preserve">
+    <value>Synchronize Terminal window from ShellBat window</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Minimap" xml:space="preserve">
+    <value>Minimap</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="OpenNewInstance" xml:space="preserve">
+    <value>Open a new instance</value>
+  </data>
+  <data name="QuitAllInstances" xml:space="preserve">
+    <value>Quit all instances</value>
+  </data>
+  <data name="ThisInstance" xml:space="preserve">
+    <value>This</value>
+  </data>
+  <data name="SwitchToInstance" xml:space="preserve">
+    <value>Switch to instance...</value>
+  </data>
+  <data name="UnspecifiedInstanceName" xml:space="preserve">
+    <value>Unspecified</value>
+  </data>
+  <data name="QuitInstance" xml:space="preserve">
+    <value>Quit...</value>
+  </data>
+  <data name="ArrangeInstances" xml:space="preserve">
+    <value>Arrange instances...</value>
+  </data>
+  <data name="Horizontally" xml:space="preserve">
+    <value>Horizontally</value>
+  </data>
+  <data name="Vertically" xml:space="preserve">
+    <value>Vertically</value>
+  </data>
+  <data name="EmptyRecycleBin" xml:space="preserve">
+    <value>Empty recycle bin</value>
+  </data>
+  <data name="RestoreAllRecycleBinItems" xml:space="preserve">
+    <value>Restore all recycle bin items</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View...</value>
+  </data>
+  <data name="OpenWithShell" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Recycle" xml:space="preserve">
+    <value>Recycle</value>
+  </data>
+  <data name="CopyTo" xml:space="preserve">
+    <value>Copy to...</value>
+  </data>
+  <data name="MoveTo" xml:space="preserve">
+    <value>Move to...</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="ExtractTo" xml:space="preserve">
+    <value>Extract to...</value>
+  </data>
+  <data name="ShellContextMenu" xml:space="preserve">
+    <value>Windows context menu...</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="PasteShortcut" xml:space="preserve">
+    <value>Paste shortcut</value>
+  </data>
+  <data name="RenderPdfThumbnails" xml:space="preserve">
+    <value>Render PDF thumbnails</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Unblock" xml:space="preserve">
+    <value>Unblock (Mark Of The Web)</value>
+  </data>
+  <data name="SquareThumbnails" xml:space="preserve">
+    <value>Square thumbnails</value>
+  </data>
+  <data name="RestartAsAdministrator" xml:space="preserve">
+    <value>Restart as administrator...</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>ShellBat</value>
+  </data>
+  <data name="OpenNewInstanceAdministrator" xml:space="preserve">
+    <value>Open a new instance as administrator</value>
+  </data>
+  <data name="ContextMenuItems" xml:space="preserve">
+    <value>{0} items</value>
+  </data>
+  <data name="OpenTargetFolder" xml:space="preserve">
+    <value>Open target folder</value>
+  </data>
+  <data name="OpenWith" xml:space="preserve">
+    <value>Open with...</value>
+  </data>
+  <data name="CacheCleared" xml:space="preserve">
+    <value>All caches were cleared</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Zip</value>
+  </data>
+  <data name="NewFolderName" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="EntryWatcherError" xml:space="preserve">
+    <value>Failed to start '{0}' folder watcher.</value>
+  </data>
+  <data name="OpenLogsFolder" xml:space="preserve">
+    <value>Open logs folder</value>
+  </data>
+  <data name="OpenWithTerminal" xml:space="preserve">
+    <value>Open with ShellBat terminal...</value>
+  </data>
+  <data name="OpenWithNewTerminal" xml:space="preserve">
+    <value>Open with new ShellBat terminal...</value>
+  </data>
+  <data name="ProcessExited" xml:space="preserve">
+    <value>Process '{0}' has exited.</value>
+  </data>
+  <data name="OpenAsFolder" xml:space="preserve">
+    <value>Open as folder</value>
+  </data>
+  <data name="OpenNewInstanceScreen" xml:space="preserve">
+    <value>Open a new instance in '{0}'</value>
+  </data>
+  <data name="HorizontallyOnAllScreens" xml:space="preserve">
+    <value>Horizontally on all screens</value>
+  </data>
+  <data name="VerticallyOnAllScreens" xml:space="preserve">
+    <value>Vertically on all screens</value>
+  </data>
+  <data name="Tiled" xml:space="preserve">
+    <value>Tiled</value>
+  </data>
+  <data name="TiledOnAllScreens" xml:space="preserve">
+    <value>Tiles on all screens</value>
+  </data>
+  <data name="RemoveDeletedItemsFromHistory" xml:space="preserve">
+    <value>Remove unreachable items from history</value>
+  </data>
+  <data name="RemoveDeletedItemsFromFavorites" xml:space="preserve">
+    <value>Remove unreachable items from favorites</value>
+  </data>
+  <data name="Mount" xml:space="preserve">
+    <value>Mount</value>
+  </data>
+  <data name="Eject" xml:space="preserve">
+    <value>Eject</value>
+  </data>
+  <data name="OpenInNewInstance" xml:space="preserve">
+    <value>Open in new instance</value>
+  </data>
+  <data name="OpenInNewInstanceAdministrator" xml:space="preserve">
+    <value>Open in new instance as administrator</value>
+  </data>
+  <data name="OpenInNewInstanceScreen" xml:space="preserve">
+    <value>Open in new instance in '{0}'</value>
+  </data>
+  <data name="MountInNewInstance" xml:space="preserve">
+    <value>Mount in new instance</value>
+  </data>
+  <data name="MountInNewInstanceScreen" xml:space="preserve">
+    <value>Mount in new instance in '{0}'</value>
+  </data>
+  <data name="SearchOptions" xml:space="preserve">
+    <value>Search options</value>
+  </data>
+  <data name="ViewFilter" xml:space="preserve">
+    <value>View filter</value>
+  </data>
+  <data name="WindowsSearch" xml:space="preserve">
+    <value>Windows search</value>
+  </data>
+  <data name="FindStrings" xml:space="preserve">
+    <value>Find strings</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="RegisterShellExtensions" xml:space="preserve">
+    <value>Register shell extensions</value>
+  </data>
+  <data name="UnregisterShellExtensions" xml:space="preserve">
+    <value>Unregister shell extensions</value>
+  </data>
+  <data name="OpenWithShellBat" xml:space="preserve">
+    <value>Open with ShellBat</value>
+  </data>
+  <data name="FolderUpdated" xml:space="preserve">
+    <value>Folder was updated by a background action because ${reason}.</value>
+  </data>
+  <data name="EventCreated" xml:space="preserve">
+    <value>'{0}' was created</value>
+  </data>
+  <data name="EventDeleted" xml:space="preserve">
+    <value>'{0} was deleted</value>
+  </data>
+  <data name="EventChanged" xml:space="preserve">
+    <value>'{0}' was modified</value>
+  </data>
+  <data name="EventRenamed" xml:space="preserve">
+    <value>'{0}' was renamed to '{1}'</value>
+  </data>
+  <data name="FindStringsDescription" xml:space="preserve">
+    <value>Search strings (ansi, unicode) in files</value>
+  </data>
+  <data name="WindowsSearchDescription" xml:space="preserve">
+    <value>Search in files using Windows Search (AQS)</value>
+  </data>
+  <data name="SearchPlaceholder" xml:space="preserve">
+    <value>Enter search terms...</value>
+  </data>
+  <data name="SearchResultsFound" xml:space="preserve">
+    <value>Found ${count} matches</value>
+  </data>
+  <data name="RecursiveSearch" xml:space="preserve">
+    <value>Search folders recursively</value>
+  </data>
+  <data name="Recursive" xml:space="preserve">
+    <value>Recursive</value>
+  </data>
+  <data name="TextFilesOnly" xml:space="preserve">
+    <value>Text files only</value>
+  </data>
+  <data name="TextFilesOnlyDescription" xml:space="preserve">
+    <value>Search only in files perceived as containing only text</value>
+  </data>
+  <data name="RecycleBin" xml:space="preserve">
+    <value>Recycle bin</value>
+  </data>
+  <data name="WindowsSearchExcluded" xml:space="preserve">
+    <value>The Windows Search service is not configured to index the current folder '{0}'. {1}</value>
+  </data>
+  <data name="CLUSIONREASON_UNKNOWNSCOPE" xml:space="preserve">
+    <value>The URL has been excluded because its scope in unknown. There is no scope that would include or exclude this URL so it is excluded by default.</value>
+  </data>
+  <data name="CLUSIONREASON_DEFAULT" xml:space="preserve">
+    <value>The URL has been included or excluded by a default rule. Default rules are set during setup or first run.</value>
+  </data>
+  <data name="CLUSIONREASON_USER" xml:space="preserve">
+    <value>The URL has been included or excluded by a user rule. User rules are set either by the user through Indexing Options.</value>
+  </data>
+  <data name="CLUSIONREASON_GROUPPOLICY" xml:space="preserve">
+    <value>The URL has been included or excluded by a group policy.</value>
+  </data>
+  <data name="SearchIndex" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="FindStringsPosition" xml:space="preserve">
+    <value>Phrase binary offset</value>
+  </data>
+  <data name="SearchFilePath" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="FindStringsText" xml:space="preserve">
+    <value>Extract</value>
+  </data>
+  <data name="SearchRelativePath" xml:space="preserve">
+    <value>Relative path</value>
+  </data>
+  <data name="SearchingCount" xml:space="preserve">
+    <value>Searched {0} files...</value>
+  </data>
+  <data name="SaveInstance" xml:space="preserve">
+    <value>Save instance configuration...</value>
+  </data>
+  <data name="NamedInstanceSettings" xml:space="preserve">
+    <value>Instance '${name}' settings</value>
+  </data>
+  <data name="CannotNavigate" xml:space="preserve">
+    <value>Cannot navigate to the '{0}' folder.</value>
+  </data>
+  <data name="DeleteHistory" xml:space="preserve">
+    <value>Delete all history</value>
+  </data>
+  <data name="GCCompleted" xml:space="preserve">
+    <value>GC completed</value>
+  </data>
+  <data name="HistoryDeleted" xml:space="preserve">
+    <value>History ({0} items) was deleted</value>
+  </data>
+  <data name="WebView2NotFound" xml:space="preserve">
+    <value>WebView2 Runtime Not Found</value>
+  </data>
+  <data name="WebView2Link" xml:space="preserve">
+    <value>This application requires the WebView2 runtime to be installed. Please install it from the Microsoft website at &lt;A HREF="{0}"&gt;{0}&lt;/A&gt; and restart this application.</value>
+  </data>
+  <data name="FillWidth" xml:space="preserve">
+    <value>Fill width</value>
+  </data>
+  <data name="FillHeight" xml:space="preserve">
+    <value>Fill height</value>
+  </data>
+  <data name="UnsupportedWindowsVersion" xml:space="preserve">
+    <value>This version of Windows ({0}) is unsupported.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Encoding" xml:space="preserve">
+    <value>Encoding</value>
+  </data>
+  <data name="Wrap" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="WrapNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="WrapCharacter" xml:space="preserve">
+    <value>Character</value>
+  </data>
+  <data name="WrapWord" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <data name="WrapWordBreak" xml:space="preserve">
+    <value>Word break</value>
+  </data>
+  <data name="SavePage" xml:space="preserve">
+    <value>Save page...</value>
+  </data>
+  <data name="SaveAllPages" xml:space="preserve">
+    <value>Save all pages...</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="SaveAllPagesChooseFolder" xml:space="preserve">
+    <value>Choose target folder (format is '{0}')</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SavingPage" xml:space="preserve">
+    <value>Saving page {0} / {1} ...</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>Auto play</value>
+  </data>
+  <data name="SaveTheme" xml:space="preserve">
+    <value>Save current theme...</value>
+  </data>
+  <data name="Instance" xml:space="preserve">
+    <value>Instance</value>
+  </data>
+  <data name="LoadTheme" xml:space="preserve">
+    <value>Load theme...</value>
+  </data>
+  <data name="ViewIn" xml:space="preserve">
+    <value>View in...</value>
+  </data>
+  <data name="Themes" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="ShellExtensionsRegistered" xml:space="preserve">
+    <value>Shell extensions registered</value>
+  </data>
+  <data name="ShellExtensionsUnregistered" xml:space="preserve">
+    <value>Shell extensions unregistered</value>
+  </data>
+  <data name="RefreshCurrentTheme" xml:space="preserve">
+    <value>Refresh current theme</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Go back</value>
+  </data>
+  <data name="GoForward" xml:space="preserve">
+    <value>Go forward</value>
+  </data>
+  <data name="GoUp" xml:space="preserve">
+    <value>Go up</value>
+  </data>
+  <data name="KeyboardShortcuts" xml:space="preserve">
+    <value>Keyboard shortcuts</value>
+  </data>
+  <data name="Alt" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="Ctrl" xml:space="preserve">
+    <value>Ctrl</value>
+  </data>
+  <data name="InvalidShortcutKey" xml:space="preserve">
+    <value>Key combination '{0}' is invalid or already used.</value>
+  </data>
+  <data name="Builtin" xml:space="preserve">
+    <value>Built-in</value>
+  </data>
+  <data name="OpenSettings" xml:space="preserve">
+    <value>Open settings</value>
+  </data>
+  <data name="OpenInstanceSettings" xml:space="preserve">
+    <value>Open instance settings</value>
+  </data>
+  <data name="OpenKeyboardShortcuts" xml:space="preserve">
+    <value>Open keyboard shortcuts</value>
+  </data>
+  <data name="MinimizeWindow" xml:space="preserve">
+    <value>Minimize window</value>
+  </data>
+  <data name="CloseWindow" xml:space="preserve">
+    <value>Close window</value>
+  </data>
+  <data name="MaximizeWindow" xml:space="preserve">
+    <value>Maximize window</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="EditAddress" xml:space="preserve">
+    <value>Edit address</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About ShellBat</value>
+  </data>
+  <data name="OpenDesktop" xml:space="preserve">
+    <value>Open 'Desktop'</value>
+  </data>
+  <data name="OpenThisPC" xml:space="preserve">
+    <value>Open 'This PC'</value>
+  </data>
+  <data name="OpenRecycleBin" xml:space="preserve">
+    <value>Open 'Recycle Bin'</value>
+  </data>
+  <data name="CommandNotAvailableInThisContext" xml:space="preserve">
+    <value>Command '{0}' is not available in this context.</value>
+  </data>
+  <data name="CloseApplication" xml:space="preserve">
+    <value>Close ShellBat</value>
+  </data>
+  <data name="FullPathCopiedToClipboard" xml:space="preserve">
+    <value>Full path was copied to clipboard.</value>
+  </data>
+  <data name="OpenTerminal" xml:space="preserve">
+    <value>Open terminal</value>
+  </data>
+  <data name="OpenFavorites" xml:space="preserve">
+    <value>Open favorites</value>
+  </data>
+  <data name="OpenHistory" xml:space="preserve">
+    <value>Open history</value>
+  </data>
+  <data name="AdministratorMode" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="OpenNewInstanceOnOtherScreen" xml:space="preserve">
+    <value>Open new instance on other screen</value>
+  </data>
+  <data name="Instances" xml:space="preserve">
+    <value>Instances</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="OpenViewers" xml:space="preserve">
+    <value>Open viewers</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>ShellBat Document</value>
+  </data>
+  <data name="NeedsRestart" xml:space="preserve">
+    <value>needs restart</value>
+  </data>
+  <data name="Instancing" xml:space="preserve">
+    <value>Instancing</value>
+  </data>
+  <data name="Windowing" xml:space="preserve">
+    <value>Windowing</value>
+  </data>
+  <data name="Viewers" xml:space="preserve">
+    <value>Viewers</value>
+  </data>
+  <data name="Terminals" xml:space="preserve">
+    <value>Terminals</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="Process" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="Graphics" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="Software" xml:space="preserve">
+    <value>Software</value>
+  </data>
+  <data name="GlobalSettings" xml:space="preserve">
+    <value>Global settings</value>
+  </data>
+  <data name="CheckForUpdates" xml:space="preserve">
+    <value>Check for updates...</value>
+  </data>
+  <data name="NoUpdates" xml:space="preserve">
+    <value>There are currently no updates available.</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>Version '{0}' is available, do you want to quit all instances and upgrade?</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="UpdatedSuccessfully" xml:space="preserve">
+    <value>ShellBat was updated successfully to version '{0}'</value>
+  </data>
+  <data name="UpdateIsNotSupported" xml:space="preserve">
+    <value>Update is not supported in development mode</value>
+  </data>
+  <data name="UpdateTitle" xml:space="preserve">
+    <value>ShellBat Update</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>Updating ...</value>
+  </data>
+  <data name="ConfirmCancel" xml:space="preserve">
+    <value>Are you sure you want to cancel the operation?</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Update failed.</value>
+  </data>
+  <data name="PinViewer" xml:space="preserve">
+    <value>Pin '{0}' viewer</value>
+  </data>
+  <data name="UnpinViewer" xml:space="preserve">
+    <value>Unpin '{0}' viewer</value>
+  </data>
+</root>

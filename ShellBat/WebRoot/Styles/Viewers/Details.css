@@ -1,0 +1,7 @@
+﻿@import '../Variables.css';
+
+.viewer-Details {
+    padding: 4px;
+    overflow: auto;
+    user-select: text;
+}

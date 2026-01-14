@@ -1,0 +1,20 @@
+{
+  "main-color": "#292929",
+  "main-font-family": "\"Aber Mono\"",
+  "main-font-size": "16px",
+  "main-background-color": "#EBF1E5",
+
+  "action-background-color": "#EBF1E5",
+  "hover-color": "#b0e2b4",
+
+  "input-background-color": "#c1d1b1",
+
+  "entries-font-size": "1em",
+  "entries-line-height": "0.6em",
+
+  "property-grid-font-family": "\u0027Segoe UI\u0027, Tahoma, Geneva, Verdana, sans-serif",
+  "property-grid-background-color": "var(--input-background-color)",
+  "property-grid-header-background-color": "#abbd89",
+
+  "toolbar-background-image": "linear-gradient(to right, #EBF1E5, #EBF1E5)"
+}

@@ -1,0 +1,9 @@
+﻿#nullable enable
+namespace ShellN;
+
+public enum APPLICATION_VIEW_MIN_WIDTH
+{
+    AVMW_DEFAULT = 0,
+    AVMW_320 = 1,
+    AVMW_500 = 2,
+}

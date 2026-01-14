@@ -1,0 +1,79 @@
+﻿@import '../Variables.css';
+
+.viewer-Binary {
+    padding: 8px;
+    background-color: var(--editor-background-color);
+    color: var(--editor-font-color);
+    overflow: hidden;
+}
+
+    .viewer-Binary pre {
+        margin: 0;
+        font-size: var(--action-font-size);
+        overflow: hidden;
+    }
+
+        .viewer-Binary pre .crlf {
+            color: var(--input-background-color);
+        }
+
+
+.viewer-Binary-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.viewer-Binary-pre-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    user-select: text;
+}
+
+.viewer-Binary-pg {
+    color: var(--main-background-color);
+    margin-top: -4px;
+    margin-bottom: 4px;
+    margin-left: -6px;
+    margin-right: -6px;
+    accent-color: var(--action-background-color);
+}
+
+.viewer-Binary-pg-grid {
+    display: flex;
+    gap: 20px;
+    background-color: var(--property-grid-background-color);
+    padding-left: 6px;
+}
+
+.viewer-Binary-pg-property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.viewer-Binary-pg-value select {
+    border: 0;
+    background: transparent;
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+.viewer-Binary-pg-value select,
+::picker(select) {
+    appearance: base-select;
+    align-items: center;
+    background-color: var(--property-grid-background-color);
+    color: var(--main-background-color);
+}
+
+    .viewer-Binary-pg-value select::picker-icon {
+        color: #999999;
+        transition: 0.4s;
+    }
+
+    .viewer-Binary-pg-value select:open::picker-icon {
+        rotate: 180deg;
+    }

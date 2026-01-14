@@ -1,0 +1,13 @@
+﻿#nullable enable
+namespace ShellN;
+
+[Flags]
+public enum HOMEGROUPSHARINGCHOICES
+{
+    HGSC_NONE = 0,
+    HGSC_MUSICLIBRARY = 1,
+    HGSC_PICTURESLIBRARY = 2,
+    HGSC_VIDEOSLIBRARY = 4,
+    HGSC_DOCUMENTSLIBRARY = 8,
+    HGSC_PRINTERS = 16,
+}
