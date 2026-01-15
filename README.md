@@ -386,11 +386,12 @@ The *Acrylic Almond*" built-in theme demonstrates this feature:
 
 # 🏗️ Build From Source
 
-1. Clone the repository.
+1. Clone the repository with submodules. Note for "normal" builds you can exclude ShellN.InteropBuilder.Cli and Win32InteropBuilder (submodule) projects which are there to generate ShellN code and rarely change. The ShellBat project doesn't directly need these.
 2. Open the solution in **Visual Studio 2026**.
 3. Restore NuGet packages.
-4. Build and run `ShellBat.exe`.
-5. For AOT publishing, use ShellBat-provided Visual Studio's Publish profiles (x86/x64/ARM64).
+4. Necessary JS and CSS files should already be there, but optionnaly run `npm install` from the ShellBat's `WebRoot` folder.
+5. Build and run `ShellBat.exe`.
+6. For AOT publishing, use ShellBat-provided Visual Studio's Publish profiles (x86/x64/ARM64).
 
 # 📜 How it works
 ShellBat is an hybrid **.NET + JS** application combining native Windows APIs with modern web technologies via WebView2. This allows for a rich UI while maintaining deep integration with the Windows Shell.
