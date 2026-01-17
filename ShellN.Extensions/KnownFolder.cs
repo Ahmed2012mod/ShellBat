@@ -20,7 +20,7 @@ public sealed class KnownFolder : InterlockedComObject<IKnownFolder>
         return null;
     }
 
-    public unsafe static IReadOnlyList<KnownFolder> GetAll()
+    public static IReadOnlyList<KnownFolder> GetAll()
     {
         using var kfm = CreateKnownFolderManager();
         uint count = 0;
